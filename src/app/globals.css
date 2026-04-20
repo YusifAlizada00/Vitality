@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f7fff7;
+  --emerald: #2ecc71;
+  --sky: #3498db;
+  --sunset: #e67e22;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  @apply min-h-dvh bg-mint text-slate-800 antialiased;
+  background-image: radial-gradient(ellipse 120% 80% at 50% -20%, rgba(46, 204, 113, 0.08), transparent),
+    radial-gradient(ellipse 80% 50% at 100% 50%, rgba(52, 152, 219, 0.06), transparent);
+}
+
+/* Premium scroll for horizontal category rail */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
